@@ -1,3 +1,4 @@
+package cl.edu.arq.ci4jtestingexamples;
 
 public class Calculator {
 

@@ -1,5 +1,8 @@
+package cl.edu.arq.ci4jtestingexamples;
 import org.junit.Assert;
 import org.junit.Test;
+
+import cl.edu.arq.ci4jtestingexamples.Calculator;
 
 public class CalculatorTest {
 	

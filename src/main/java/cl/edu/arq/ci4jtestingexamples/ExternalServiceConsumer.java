@@ -1,3 +1,4 @@
+package cl.edu.arq.ci4jtestingexamples;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;

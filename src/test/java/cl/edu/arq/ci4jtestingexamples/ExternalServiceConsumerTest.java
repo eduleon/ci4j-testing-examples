@@ -1,3 +1,4 @@
+package cl.edu.arq.ci4jtestingexamples;
 import static org.mockito.Mockito.when;
 
 import javax.ws.rs.core.Response;
@@ -9,6 +10,8 @@ import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import cl.edu.arq.ci4jtestingexamples.ExternalServiceConsumer;
 
 @RunWith(MockitoJUnitRunner.class)
 public class ExternalServiceConsumerTest {
