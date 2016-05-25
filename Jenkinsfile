@@ -1,16 +1,14 @@
 node {
     stage 'Setup'
 
+    // Get some code from a GitHub repository
+    git url: 'https://github.com/eduleon/ci4j.git'
+    
     // Get the maven tool.
     // ** NOTE: This 'M3' maven tool must be configured
     // **       in the global configuration.           
     def mvnHome = tool 'M3'
-    sh "${mvnHome}/bin/mvn -version"
-    
-    // Get some code from a GitHub repository
-    git url: 'https://github.com/eduleon/ci4j.git'
-    sh "${mvnHome}/bin/mvn install"
-    
+    sh "${mvnHome}/bin/mvn install -Dskip.unit.tests -Djacoco.skip -V"
 }
 
 node {
@@ -45,6 +43,5 @@ node {
             }
         }
     }
-
 }
 
